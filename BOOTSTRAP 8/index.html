@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css"/>
+
+    <title>Scorpio.com</title>
+</head>
+<body>
+    <!-- navigasi -->
+    <nav class="navbar navbar-dark bg-transparent navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="Images/Scorpio.png" width="180" alt="" loading="Vulcan co.ltd" />
+            </a>
+            
+                <div class="container-fluid">
+
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link" href="#produk">Produk</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Promo</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Kontak</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+        </div>
+    </nav>
+
+        <!-- slider / carousel -->
+
+        <div class="container mt-4 mb-3">
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <!-- isi dari slider -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Images/gaming.png" class="d-block " alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Images/Legion.png" class="d-block " alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Images/G15strix.jpg" class="d-block " alt="...">
+              </div>
+            </div>
+
+            <!-- tombol Kiri Kanan -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- jumbotron -->
+        <div class="jumbotron jumbotron-fluid text-center">
+          <div class="container">
+
+          <h1 class="display-1">Promo Laptop</h1>
+
+          <p>
+            This is a simple hero unit, 
+            a simple jumbotron-style component for calling extra attention to featured content or information.
+          </p>
+
+          <hr class="my-4">
+          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+          <a class="btn btn-outline-primary btn-lg" href="#" role="button">Pembelian!</a>
+          </div>
+        </div>
+
+        <!-- card -->
+        <div class="container pt-5">
+          <div class="row" id="produk">
+            <div class="col-lg-4 d-flex justify-content-center">
+              <div class="card border-0">
+                <img src="Images/gaming.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">MSI Katana GF76</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h5>Rp. 17.999.000</h5>
+                  <a href="#" class="btn btn-primary">Beli</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 d-flex justify-content-center">
+              <div class="card border-0">
+                <img src="Images/Legion.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Lenovo Legion 7 pro</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h5>Rp. 23.775.000</h5>
+                  <a href="#" class="btn btn-primary">Beli</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 d-flex justify-content-center">
+              <div class="card border-0" >
+                <img src="Images/G15strix.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Asus ROG Strix G15</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h5>Rp.15.199.000</h5>
+                  <a href="#" class="btn btn-primary">Beli</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Form Kontak</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body bg-black">
+        <form>
+        <div class="row">
+          <div class="col">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">Isi Nama Dan Alamat Anda</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Alamat</label>
+              <input type="text" class="form-control" id="exampleInputPassword1">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Kota</label>
+              <input type="text" class="form-control" id="exampleInputPassword1">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Kode Pos</label>
+              <input type="text" class="form-control" id="exampleInputPassword1">
+            </div>
+          </div>
+        </div>
+          
+        </form>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary data-bs-dismiss="modal"">Kirim</button>
+      </div>
+    </div>
+  </div>
+</div>
+        
+
+    <script src="bootstrap-5.2.0-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
