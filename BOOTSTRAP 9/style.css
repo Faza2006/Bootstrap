@@ -1,0 +1,57 @@
+.carousel-item img{
+    height: 200px;
+}
+
+.jumbotron{
+    background-color: lightgrey;
+}
+
+@media(min-width:560px){
+    .carousel-item img{
+        height: 400px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.jumbotron{
+    padding: 0.5rem;
+    background:black;
+}
+
+.jumbotron p{
+    color: white;
+}
+
+.display-1{
+    color: white;
+}
+
+.container h1{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.card img{
+    height: 180px;
+}
+
+body{
+    background-image: url(Images/tech.jpg);
+}
+
+label{
+    color: white;
+}
+
+.form-text{
+    color: white;
+}
+
+.col{
+    color: white;
+}
+
+.table{
+    color: white;
+}
